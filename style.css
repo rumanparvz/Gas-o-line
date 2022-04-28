@@ -1,4 +1,4 @@
-*{
+ *{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -6,6 +6,9 @@
 }
 a {
     text-decoration: none;
+}
+section{
+    padding: 2rem 3%;
 }
  html{
      font-size: 62.5%;
@@ -32,8 +35,10 @@ a {
     font-size: 18px !important;
 }
 .btn4 {
-    padding: 6px 30px !important;
-    font-size: 18px !important;
+    padding: 6px 30px;
+    font-size: 18px ;
+    margin-left: 8rem;
+    border: none;
 }
 .btn1{
      padding: 17px 48px; 
@@ -47,6 +52,19 @@ a {
     font-weight: 600,Semi Bold;
     font-family: 'Quicksand', sans-serif;
        
+}
+.btn1{
+    padding: 11px 30px; 
+    border: 1.5px solid rgba(250,255,0,1); 
+   margin-top: 20px;
+   box-shadow: 0px 0px 8px 1px #42ff00;
+   /* border: 1px solid #42ff00;; */
+   background: transparent;
+   display: inline-block;
+   position: relative;
+   font-weight: 600,Semi Bold;
+   font-family: 'Quicksand', sans-serif;
+      
 }
 .emoji-text{
     font-size: 18px;
@@ -79,16 +97,17 @@ a {
 }
 .header{
     height: 810px;
-    width:100%;
+    width:100vw;
     background-image:linear-gradient(rgba(37,91,247,0.5),rgba(37,91,247,0.5)),url('./image/header.jpeg');
     background-position:center;
     background-size: cover;
     position: relative;
+ 
 }
 nav{
     width: 100%;
     display: flex;
-    padding: 10px 15px;
+    padding: 10px 25px;
     justify-content: space-between;
     align-items: center;
 }
@@ -155,21 +174,47 @@ nav .fa{
 
 
 
+
+
+
 /* helping */
+.helping .helping-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+}
+img{
+    width: 100%;
+}
 
 .box img{
     background: rgba(0,0,0,0.31);
+
 }
 
 .emoji p{
     text-align: justify;
 }
+.emoji .emoji-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 3rem;
+    justify-items: center;
+}
+.emoji-container .box{
+    text-align: center;
+    width: 50%;
+}
+/* .emoji-container .box .content{
+   
+}
+ */
+
 
 
 
 .testoimonial{
     min-height: 424px;
-    width:100%;
+    width:100vw;
     background-image:linear-gradient(rgba(37,91,247,0.5),rgba(37,91,247,0.5)),url('./image/header.jpeg');
     background-position:center;
     background-size: cover;
@@ -177,14 +222,34 @@ nav .fa{
     margin-top: 100px;
    
 }
-
-
-.center{
-    text-align: center;
-   padding-top: 50px;
+.testoimonial img{
+   width: 20rem;
+   height: 20rem;
 }
-
-.testoimonial .box p{
+.testoimonial .image{
+  text-align: center;
+  padding-top: 20px;
+}
+.testoimonial-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+}
+.testoimonial .testoimonial-container .box{
+    text-align: center;
+    padding-top: 20px;
+}
+.testoimonial .testoimonial-container .box h3{
+    padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+.testoimonial .testoimonial-container .icons img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    background: none;
+    padding-top: 10px;
+}
+.testoimonial .testoimonial-container .box p{
   font-size: 16px;
   font-weight: 300;
   font-family: 'Quicksand', sans-serif;
@@ -193,17 +258,18 @@ nav .fa{
 
 }
 
-.testoimonial .box h3{
+.testoimonial .testoimonial-container .box h3{
     color: #fff;
 }
 
-.testoimonial .icons img{
-    background:none;
-}
+
+
+
+
 
 
 .map{
-    width: 100%;
+    width:100vw;
     height: 710px;
     background-color: rgba(37, 91, 247, 1); 
     margin: 0;
@@ -218,15 +284,56 @@ nav .fa{
   }
 
 
+
+.calculates .calculates-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+     
+}
+.text-center{
+ display: flex;
+ justify-content:center;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+     
+}
+.d-btn{
+    display: flex;
+    align-items: center;
+    
+ 
+}
+.calculates .calculates-container .box .form-group input{
+    font-size: 16px;
+    padding: 8px 10px;
+}
+.calculates .calculates-container .box .group select{
+    padding: 8px 10px;
+}
+.calculates .calculates-container .box .form-group p{
+    padding-bottom: 5px;
+}
+.calculates .calculates-container .box .form-group{
+    margin-right: 10px;
+}
+.calculates .calculates-container .box .group{
+     padding-top: 24px;
+}
 .calucute{
-width: 319px;
+width: 280px;
 height: 280px;
 left: 666px;
 top: 3894px;
-
 border: 1px solid #000000;
 box-sizing: border-box;
 border-radius: 24px;
+ 
+}
+.calucute img{
+    background: none;
 }
 .calculates input{
     font-size: 18px;
@@ -236,7 +343,7 @@ border-radius: 24px;
 }
 
 .calculates select{
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .text{
@@ -261,13 +368,29 @@ border-radius: 24px;
 
 .footer{
     background:rgba(37, 91, 247, 1);
-    width: 100%;
+    width:100vw;
     min-height: 274px;
     margin-top: 100px;
+     
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.box-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .bod-footer{
   border-right: 1px solid #fff;
   margin-right: 5px;
+}
+.footer-container .box .address{
+    text-align: center;
+}
+.text-white{
+    color: #fff;
 }
 .footer .logof{
 text-decoration: none;
@@ -281,6 +404,7 @@ color: #fff;
 text-align: center;
 
 }
+
 .footer .logo{
     color:#fff;
     font-size: 20px;
@@ -323,9 +447,10 @@ text-align: center;
         font-size: 80px;
     }
     
-    
-  }
+}
+  
 @media(max-width:991px){
+
     .text-box h1{
         font-size: 50px;
         line-height: 50px;
@@ -363,6 +488,13 @@ text-align: center;
     
   
 }
+
+@media(max-width:780px){
+   .calculates-container .box {
+       padding-top: 20px;
+   }
+    
+}
 @media(max-width:600px){
     .text-box span{
         font-size: 60px;
@@ -374,23 +506,26 @@ text-align: center;
     .text-box span{
         font-size: 35px;
     }
-}
+    
 @media(max-width:450px){
-    .text-box{
+  
+  .text-box{
         text-align: center;
     }
+  
     .text-box h1{
-        font-size: 50px;
+        font-size: 30px;
         line-height: 60px;
+      
     }
     .text-box span{
-        font-size: 40px;
+        font-size: 20px;
     }
     nav .logo{
         font-size: 30px;
     }
     .btn{
-        padding:20px 20px;
+        padding:10px 20px;
          
     }
     .text-box a{
@@ -398,16 +533,22 @@ text-align: center;
     }
     .header{
     height: 650px;
+    width:100%;
     
     }
     .heading span{
-        font-size: 40px;
+        font-size: 20px;
     }
       .heading{
-        font-size: 40px;
+        font-size: 20px;
     }
+
 }
+.testoimonial img{
+    width: 10rem;
+    height: 10rem;
+ }
 
 
-
+}
 
